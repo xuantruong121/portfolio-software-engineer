@@ -1,32 +1,63 @@
-# React + TypeScript + Vite
+# Personal Portfolio - Nguyễn Đỗ Xuân Trường
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, and premium personal portfolio website built to showcase my skills as a Fullstack Developer Intern.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern UI**: Dark mode by default with glassmorphism effects and modern typography.
+- **Smooth Animations**: Powered by `framer-motion` for page transitions and micro-interactions.
+- **Internationalization (i18n)**: Seamless English/Vietnamese language switching via custom React Context.
+- **Responsive Design**: Looks great on desktop, tablet, and mobile devices.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React 19 + Vite
+- **Language:** TypeScript
+- **Styling:** Vanilla CSS (CSS Variables, Glassmorphism)
+- **Icons:** `lucide-react`, `react-icons`
+- **Animations:** `framer-motion`
+- **Deployment:** GitHub Pages (`gh-pages`)
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Prerequisites
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- Node.js (v18 or higher)
+- npm or yarn
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xuantruong121/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open `http://localhost:5173` in your browser.
+
+## Deployment to GitHub Pages
+
+This project is pre-configured for deployment to GitHub Pages.
+
+1. Ensure your `package.json` has the homepage field or your `vite.config.ts` has the correct `base` path (currently set to `./`).
+2. Run the deployment script:
+   ```bash
+   npm run deploy
+   ```
+   *This command runs `npm run build` followed by `gh-pages -d dist`, pushing the built files to the `gh-pages` branch.*
+
+## Contact
+
+- **Email**: xtruong121.work@gmail.com
+- **LinkedIn**: [Nguyễn Đỗ Xuân Trường](https://www.linkedin.com/in/nguyen-do-xuan-truong-7865b7285/)
+- **GitHub**: [xuantruong121](https://github.com/xuantruong121)

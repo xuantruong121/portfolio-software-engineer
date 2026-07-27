@@ -1,6 +1,6 @@
 import { useLanguage } from '../contexts/LanguageContext';
-import { FolderGit2, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 
 export const Projects = () => {
   const { t } = useLanguage();
@@ -26,30 +26,24 @@ export const Projects = () => {
   return (
     <section id="projects" className="container">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
       >
         <h2 className="section-title">
-          <FolderGit2 className="contact-icon" size={32} />
-          {t.projects.title}
+          <span className="text-gradient">{t.projects.title}</span>
         </h2>
 
         <div className="projects-grid">
           {projects.map((project, idx) => (
-            <motion.div 
-              key={idx} 
-              className="glass-panel project-card"
-              whileHover={{ scale: 1.01 }}
-              transition={{ duration: 0.2 }}
-            >
+            <div key={idx} className="glass-panel project-card">
               <div className="project-header">
                 <div>
                   <h3 className="project-title">{project.title}</h3>
                   <div className="project-role">{project.role}</div>
                 </div>
-                <a href={project.link} target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '8px 16px' }}>
+                <a href={project.link} target="_blank" rel="noreferrer" className="btn-secondary">
                   <ExternalLink size={18} />
                   {t.projects.viewProject}
                 </a>
@@ -57,21 +51,14 @@ export const Projects = () => {
               
               <p className="project-desc">{project.desc}</p>
               
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                 {project.tags.map((tag, i) => (
-                  <span key={i} style={{ 
-                    background: 'rgba(99, 102, 241, 0.1)', 
-                    color: 'var(--accent-primary)',
-                    padding: '4px 12px',
-                    borderRadius: '12px',
-                    fontSize: '0.85rem',
-                    fontWeight: 500
-                  }}>
+                  <span key={i} className="tech-tag">
                     {tag}
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </motion.div>

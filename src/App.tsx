@@ -10,6 +10,7 @@ import './index.css';
 function App() {
   return (
     <LanguageProvider>
+      <div className="noise-overlay" />
       <Header />
       <main>
         <Hero />

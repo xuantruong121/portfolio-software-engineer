@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
-        <div className="text-gradient" style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: '1.5rem' }}>
+        <div className="text-gradient" style={{ fontFamily: 'Outfit', fontWeight: 800, fontSize: '1.75rem', letterSpacing: '-0.02em' }}>
           XT.
         </div>
         
