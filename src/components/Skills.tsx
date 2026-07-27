@@ -14,7 +14,7 @@ export const Skills = () => {
     {
       title: t.skills.frontend,
       icon: <Code2 size={28} />,
-      items: ['TypeScript', 'ReactJS / React 19', 'React Native (Expo)', 'Ant Design', 'Framer Motion']
+      items: ['TypeScript', 'ReactJS / React 19', 'React Native (Expo)', 'Ant Design']
     },
     {
       title: t.skills.database,

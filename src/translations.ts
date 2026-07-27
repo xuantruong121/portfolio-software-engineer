@@ -59,7 +59,7 @@ export const translations = {
     },
     about: {
       title: "Về Bản Thân",
-      description: "Sinh viên Kỹ thuật Phần mềm tại trường Đại học Công nghiệp TP.HCM (IUH) với điểm GPA: 3.2/4.0. Có kinh nghiệm thực tế về Fullstack (Spring Boot, React, React Native). Đang tìm kiếm vị trí Thực tập sinh tại các công ty Outsource. Tự tin đọc hiểu tài liệu kỹ thuật tiếng Anh và thích nghi nhanh với các công nghệ và yêu cầu dự án khác nhau."
+      description: "Sinh viên Kỹ thuật Phần mềm tại trường Đại học Công nghiệp TP.HCM (IUH) với điểm GPA: 3.19/4.0. Có kinh nghiệm thực tế về Fullstack (Spring Boot, React, React Native). Đang tìm kiếm vị trí Thực tập sinh tại các công ty Outsource. Tự tin đọc hiểu tài liệu kỹ thuật tiếng Anh và thích nghi nhanh với các công nghệ và yêu cầu dự án khác nhau."
     },
     skills: {
       title: "Kỹ năng Kỹ thuật",
@@ -78,7 +78,7 @@ export const translations = {
       },
       minizalo: {
         title: "MiniZalo - Ứng dụng Chat Real-time",
-        role: "Mobile Frontend Contributor (1/4 thành viên)",
+        role: "Mobile Frontend Contributor (1/5 thành viên)",
         desc: "Ứng dụng nhắn tin đa nền tảng với Expo Router View Splitter. Tích hợp WebSocket STOMP real-time cho thu hồi tin nhắn, vuốt để trả lời, bảng thả cảm xúc, và bộ nhớ cache ngoại tuyến."
       },
       haitebooks: {
